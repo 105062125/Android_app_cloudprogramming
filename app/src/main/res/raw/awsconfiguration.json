@@ -1,0 +1,46 @@
+{
+    "UserAgent": "aws-amplify-cli/0.1.0",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-east-1:11db8827-c080-44de-935e-20993ff6768f",
+                "Region": "us-east-1"
+            }
+        }
+    },
+    "FacebookSignIn": {
+        "AppId": "251040476113887",
+        "Permissions": "public_profile,email"
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-1_1mlqC1rQt",
+            "AppClientId": "5kiu1e890f4qf4tjtkrpqnutlb",
+            "AppClientSecret": "1d4nul8dj5l8nj40o2qaind5h7fih677lkp7j62eqi4ppji58sjo",
+            "Region": "us-east-1"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "OAuth": {
+                "WebDomain": "cloudprog57d60c79-57d60c79-cloudenv.auth.us-east-1.amazoncognito.com",
+                "AppClientId": "7f5o8e5553vbh6nqdsaihde524",
+                "AppClientSecret": "1rioksvi7hdndkfn3ehso6dmasgd162jte7412t3nrebcn081b9c",
+                "SignInRedirectURI": "https://about.google/intl/zh-TW/",
+                "SignOutRedirectURI": "https://about.google/intl/zh-TW/",
+                "Scopes": [
+                    "phone",
+                    "email",
+                    "openid",
+                    "profile",
+                    "aws.cognito.signin.user.admin"
+                ]
+            },
+            "authenticationFlowType": "USER_SRP_AUTH"
+        }
+    }
+}

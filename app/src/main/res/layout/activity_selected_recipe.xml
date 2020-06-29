@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".SelectedRecipeActivity">
+
+
+    <ImageView
+        android:id="@+id/selected_recipe_image"
+        android:layout_width="395dp"
+        android:layout_height="166dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp" />
+
+    <TextView
+        android:id="@+id/selected_recipe_material_and_author"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_above="@+id/selected_recipe_steps"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="所需食材：" />
+
+    <TextView
+        android:id="@+id/selected_recipe_steps"
+        android:layout_width="388dp"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="86dp"
+        android:text="步驟：" />
+
+    <Button
+        android:id="@+id/resumeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:onClick="resume"
+        android:text="resume" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="onClickStart"
+        android:text="start" />
+</RelativeLayout>

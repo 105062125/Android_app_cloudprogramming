@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/recipeImage"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_marginStart="10dp"
+        android:padding="6dp"
+        android:src="@drawable/mapo" />
+
+    <TextView
+        android:id="@+id/recipeViewAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="6dp"
+        android:text="@string/recipeViewAuthor" />
+
+    <TextView
+        android:id="@+id/recipeViewDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="6dp"
+        android:text="@string/recipeViewDifficulty" />
+
+</LinearLayout>

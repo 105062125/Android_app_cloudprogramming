@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.funkitapp"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Add AWS Dependencies
+    // AWS Mobile SDK for Android
+    def aws_version = '2.6.27'
+    implementation "com.amazonaws:aws-android-sdk-core:$aws_version"
+    implementation "com.amazonaws:aws-android-sdk-auth-core:$aws_version@aar"
+    //implementation "com.amazonaws:aws-android-sdk-auth-ui:$aws_version@aar"
+    implementation "com.amazonaws:aws-android-sdk-auth-userpools:$aws_version@aar"
+    implementation "com.amazonaws:aws-android-sdk-cognitoidentityprovider:$aws_version"
+    implementation "com.amazonaws:aws-android-sdk-s3:$aws_version"
+    implementation "com.amazonaws:aws-android-sdk-sqs:$aws_version"
+
+    implementation 'com.amazonaws:aws-android-sdk-sqs:2.15.+'
+    //For AWSMobileClient only:
+    //implementation 'com.amazonaws:aws-android-sdk-mobile-client:2.16.+'
+
+//For the drop-in UI also:
+    //implementation 'com.amazonaws:aws-android-sdk-auth-userpools:2.7.+'
+    //implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.16.+'
+
+//For hosted UI also:
+    implementation 'com.amazonaws:aws-android-sdk-cognitoauth:2.16.+'
+    implementation('com.amazonaws:aws-android-sdk-mobile-client:2.7.+@aar') { transitive = true }
+    // Cognito UserPools for SignIn
+    implementation 'com.android.support:support-v4:28.+'
+    implementation('com.amazonaws:aws-android-sdk-auth-userpools:2.7.+@aar') { transitive = true }
+    // Sign in UI Library
+    implementation 'com.android.support:appcompat-v7:28.+'
+    implementation('com.amazonaws:aws-android-sdk-auth-ui:2.7.+@aar') { transitive = true }
+    implementation 'com.android.support:support-v4:28.+'
+    implementation('com.amazonaws:aws-android-sdk-auth-facebook:2.7.+@aar') { transitive = true; }
+    //implementation 'com.facebook.android:facebook-login:[5,6)'
+    //implementation 'com.facebook.android:facebook-login:[5,6)'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

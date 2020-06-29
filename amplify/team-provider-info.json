@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-funkitapp-dev-145329-authRole",
+            "UnauthRoleArn": "arn:aws:iam::270113574609:role/amplify-funkitapp-dev-145329-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::270113574609:role/amplify-funkitapp-dev-145329-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-funkitapp-dev-145329-deployment",
+            "UnauthRoleName": "amplify-funkitapp-dev-145329-unauthRole",
+            "StackName": "amplify-funkitapp-dev-145329",
+            "StackId": "arn:aws:cloudformation:us-east-1:270113574609:stack/amplify-funkitapp-dev-145329/efca2f80-aa1d-11ea-abcb-126c97cb5bc1",
+            "AmplifyAppId": "d8s31d6e20xp2"
+        }
+    }
+}
